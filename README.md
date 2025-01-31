@@ -95,7 +95,7 @@ To run the full optimization framework, use the following steps:
    conda activate emb3rs-gis-module
    python run.py
    ```
-4. **Run the OSeMOSYS Model**: Input the results from the geospatial optimization to determine the **cost-optimal** long-term investment plan. The input file for the OSeMOSYS model needs to be prepared. Refer to structure and instructions [here]([url](https://github.com/OSeMOSYS/OSeMOSYS_PuLP)) and [here]([url](https://osemosys.readthedocs.io/en/latest/)).
+4. **Run the OSeMOSYS Model**: Input the results from the geospatial optimization to determine the **cost-optimal** long-term investment plan. The input file for the OSeMOSYS model needs to be prepared. Refer to structure and instructions [here]([url](https://github.com/OSeMOSYS/OSeMOSYS_PuLP)) and [here]([url](https://osemosys.readthedocs.io/en/latest/)). The ouput format can be csv or excel. This version of OSemOSYS supports several solver, cplex, gurobi, cbc, glpk, and scip.
  ```bash
    conda activate OSeMOSYS
    python OSeMOSYS.py -i inputfile.xlsx -s solver -o output format
